@@ -1,5 +1,7 @@
 Unix
 Bash
 Git
+javascript
 html
 css
+
