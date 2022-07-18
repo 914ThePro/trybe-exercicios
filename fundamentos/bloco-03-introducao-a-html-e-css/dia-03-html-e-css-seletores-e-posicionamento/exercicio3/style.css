@@ -1,0 +1,17 @@
+h1, p{
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+li:hover{
+
+    background-color: bisque;
+    
+}
+
+li:active{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
