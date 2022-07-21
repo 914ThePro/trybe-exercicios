@@ -9,15 +9,15 @@ if(a+b+c == 180){
 
   console.log("False");
 
-  if(a < 0 || a > 360){
+  if(a < 0){
     console.log(a+" não é um ângulo valido");
   }
 
-  if(b < 0 || b > 360){
+  if(b < 0){
     console.log(b+" não é um ângulo valido");
   }
 
-  if(c < 0 || c > 360){
+  if(c < 0){
     console.log(c+" não é um ângulo valido");
   }
 
