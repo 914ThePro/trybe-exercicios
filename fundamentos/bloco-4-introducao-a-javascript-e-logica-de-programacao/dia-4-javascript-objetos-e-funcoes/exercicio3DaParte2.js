@@ -1,4 +1,4 @@
-function maiorNumeroArray(array){ //função que retorna o maior valor encontrado em um array; 
+function menorNumeroArray(array){ //função que retorna o maior valor encontrado em um array; 
   let indexMenorNumero = 0;
   for(let index = 1; index < array.length; index++){
     
@@ -12,4 +12,4 @@ function maiorNumeroArray(array){ //função que retorna o maior valor encontrad
 }
 
 let test = [2, 4, 6, 7, 10, 0, -3];
-console.log(maiorNumeroArray(test));
+console.log(menorNumeroArray(test));
