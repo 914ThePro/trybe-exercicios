@@ -41,4 +41,4 @@ function retrieveDecimalAlgarism(romanAlg){
   return parseInt(numToReturn);
 }
 
-console.log(romanToDecimal("xxiv"));
+console.log(romanToDecimal("xiv"));
