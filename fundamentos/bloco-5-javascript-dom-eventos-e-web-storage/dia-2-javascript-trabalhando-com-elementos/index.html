@@ -88,6 +88,26 @@
       img1.className = 'small-image';
       section2.appendChild(img1);
 
+      const ul = document.createElement("ul");
+      section3.appendChild(ul);
+     
+      let lis = [];
+      for(let index = 1; index <= 10; index++){
+        lis[index] = document.createElement('li');
+        ul.appendChild(lis[index]);
+      }
+
+      lis[1].innerText = "um";
+      lis[2].innerText = "dois";
+      lis[3].innerText = "três";
+      lis[4].innerText = "quatro";
+      lis[5].innerText = "cinco";
+      lis[6].innerText = "seis";
+      lis[7].innerText = "sete";
+      lis[8].innerText = "oito";
+      lis[9].innerText = "nove";
+      lis[10].innerText = "dez";
+
     </script>
   </body>
 </html>
