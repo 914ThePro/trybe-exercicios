@@ -61,6 +61,12 @@
           const paragrafo = document.getElementsByTagName("p");
           paragrafo[0].innerText = "Trabalhando com programação";
         }
+
+        mudarFundoParaVerde();
+        function mudarFundoParaVerde(){
+          const mainContent = document.querySelector(".main-content")
+          mainContent.style.backgroundColor = "rgb(76,164,109)";
+        }
     </script>
   </body>
 </html>
