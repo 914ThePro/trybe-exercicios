@@ -86,6 +86,15 @@
           paragrafo[0].innerText = paragrafo[0].innerText.toUpperCase();
         }
 
+        mostrarParagrafosConsole();
+        function mostrarParagrafosConsole(){
+          const paragrafos = document.getElementsByTagName("p");
+
+          for( paragrafo of paragrafos){
+            console.log(paragrafo.innerText);
+          }
+        }
+
     </script>
   </body>
 </html>
