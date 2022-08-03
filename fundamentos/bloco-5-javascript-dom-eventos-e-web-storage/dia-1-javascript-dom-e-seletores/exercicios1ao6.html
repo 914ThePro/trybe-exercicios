@@ -79,6 +79,13 @@
           const title = document.querySelector(".title");
           title.innerText = "Exercício 5.1 - JavaScript";
         }
+
+        paragrafoMaiusculo();
+        function paragrafoMaiusculo(){
+          const paragrafo = document.getElementsByTagName("p");
+          paragrafo[0].innerText = paragrafo[0].innerText.toUpperCase();
+        }
+
     </script>
   </body>
 </html>
