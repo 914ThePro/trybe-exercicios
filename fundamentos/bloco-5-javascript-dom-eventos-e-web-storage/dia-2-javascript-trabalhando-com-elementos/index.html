@@ -75,14 +75,18 @@
       paragrafo1.innerText = "Algum texto";
       section1.appendChild(paragrafo1);
 
-      section2 = document.createElement("section");
+      const section2 = document.createElement("section");
       section2.className = 'left-content';
       main.appendChild(section2);
 
-      section3 = document.createElement("section");
+      const section3 = document.createElement("section");
       section3.className = 'right-content';
       main.appendChild(section3);
 
+      const img1 = document.createElement('img');
+      img1.src = 'https://picsum.photos/200';
+      img1.className = 'small-image';
+      section2.appendChild(img1);
 
     </script>
   </body>
