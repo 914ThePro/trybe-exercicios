@@ -122,15 +122,21 @@ function unZoomElement(event){
 
 function createTask(taskName){
   let task = document.createElement("span");
-  let p = document.createElement("p");
   task.innerText = taskName;
-  p.appendChild(task);
-  document.querySelector('.my-tasks').appendChild(p);
+  document.querySelector('.my-tasks').appendChild(task);
+}
+
+function createTaskSubtitle(cor){
+  let div = document.createElement("div");
+  div.style.backgroundColor = cor;
+  document.querySelector(".my-tasks").appendChild(div);
 }
 
 createDaysOfTheWeek();
 createDaysOfTheMonth();
 createHolidayButton('Feriados');
 createFridayButton('Sexta-feira');
+createTask("teste");
+createTaskSubtitle("green");
 
 // Escreva seu código abaixo.
