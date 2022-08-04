@@ -62,6 +62,7 @@
       const h1 = document.createElement("h1");
       h1.innerText = "Exercício 5.2 - JavaScript";
       body[0].appendChild(h1);
+      h1.className = "title";
 
       const main = document.createElement("main");
       main.className = "main-content";
@@ -78,10 +79,12 @@
       const section2 = document.createElement("section");
       section2.className = 'left-content';
       main.appendChild(section2);
+      section2.parentElement.style.backgroundColor = 'green'
 
       const section3 = document.createElement("section");
       section3.className = 'right-content';
       main.appendChild(section3);
+      section3.style.marginRight = 'auto';
 
       const img1 = document.createElement('img');
       img1.src = 'https://picsum.photos/200';
@@ -112,12 +115,16 @@
       for(let index = 1; index <=3; index ++){
         h3s[index] = document.createElement('h3');
         main.appendChild(h3s[index]);
+        h3s[index].className = 'description';
       }
 
       h3s[1].innerText = "teste";
       h3s[2].innerText = "teste";
       h3s[3].innerText = "teste";
 
+      main.removeChild(section2);
+      ul.removeChild(ul.lastElementChild);
+      ul.removeChild(ul.lastElementChild);
     </script>
   </body>
 </html>
