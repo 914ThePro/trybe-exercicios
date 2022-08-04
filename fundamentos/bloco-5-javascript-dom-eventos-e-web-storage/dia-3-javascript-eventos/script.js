@@ -128,8 +128,20 @@ function createTask(taskName){
 
 function createTaskSubtitle(cor){
   let div = document.createElement("div");
+  div.className = "task";
   div.style.backgroundColor = cor;
   document.querySelector(".my-tasks").appendChild(div);
+
+  div.addEventListener("click", selectTask);
+}
+
+function selectTask(event){
+  
+  if(event.target.className == "task"){
+    event.target.className = "task selected";
+  }else{
+    event.target.className = "task";
+  }
 }
 
 createDaysOfTheWeek();
