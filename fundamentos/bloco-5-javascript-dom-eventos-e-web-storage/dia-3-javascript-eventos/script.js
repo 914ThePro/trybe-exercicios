@@ -1,3 +1,5 @@
+let holidaysMarked = false;
+
 function createDaysOfTheWeek() {
   const weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
   const weekDaysList = document.querySelector('.week-days');
@@ -39,6 +41,32 @@ function createHolidayButton(buttonName){
   let btnHoliday = document.createElement('button');
   btnHoliday.innerText = buttonName;
   buttonsContainer.appendChild(btnHoliday);
+
+  btnHoliday.addEventListener("click",function(){
+    if(holidaysMarked){
+      unmarkHolidays();
+    }else{
+      markHolidays();
+    }
+  });
+}
+
+function markHolidays(){
+  let holidays = document.querySelectorAll(".holiday");
+
+  for(holiday of holidays){
+    holiday.style.backgroundColor = 'yellow';
+  }
+  holidaysMarked = true;
+}
+
+function unmarkHolidays(){
+  let holidays = document.querySelectorAll(".holiday");
+
+  for(holiday of holidays){
+    holiday.style.backgroundColor = 'rgb(238,238,238)';
+  }
+  holidaysMarked = false;
 }
 
 createDaysOfTheWeek();
