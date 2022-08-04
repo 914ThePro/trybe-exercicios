@@ -33,6 +33,11 @@ function createDaysOfTheMonth(){
     if(day == 4 || day == 11 || day == 18 || day == 25){
       li.className += " friday";
     }
+
+    li.style.cursor = 'default';
+
+    li.addEventListener("mouseover", zoomElement);
+    li.addEventListener("mouseout", unZoomElement);
   }
   
 }
@@ -106,6 +111,15 @@ function unmarkFridays(){
   }
   fridaysMarked = false;
 }
+
+function zoomElement(event){
+  event.target.style.fontSize = '40px';
+}
+
+function unZoomElement(event){
+  event.target.style.fontSize = '20px';
+}
+
 
 createDaysOfTheWeek();
 createDaysOfTheMonth();
