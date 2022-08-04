@@ -34,7 +34,15 @@ function creteDaysOfTheMonth(){
   
 }
 
+function createHolidayButton(buttonName){
+  let buttonsContainer = document.querySelector('.buttons-container');
+  let btnHoliday = document.createElement('button');
+  btnHoliday.innerText = buttonName;
+  buttonsContainer.appendChild(btnHoliday);
+}
+
 createDaysOfTheWeek();
 creteDaysOfTheMonth();
+createHolidayButton('Feriados');
 
 // Escreva seu código abaixo.
