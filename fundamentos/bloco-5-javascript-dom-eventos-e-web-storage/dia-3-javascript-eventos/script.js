@@ -38,6 +38,7 @@ function createDaysOfTheMonth(){
 
     li.addEventListener("mouseover", zoomElement);
     li.addEventListener("mouseout", unZoomElement);
+    li.addEventListener("click", changeColor);
   }
   
 }
@@ -144,11 +145,25 @@ function selectTask(event){
   }
 }
 
+function changeColor(e){
+  let selectedTask = document.querySelector(".selected");
+  
+  if(e.target.style.color == selectedTask.style.backgroundColor){
+    e.target.style.color = 'rgb(119,119,119)';
+  }else{
+    e.target.style.color = selectedTask.style.backgroundColor;
+  }
+  //console.log(selectedTask);
+  
+}
+
 createDaysOfTheWeek();
 createDaysOfTheMonth();
 createHolidayButton('Feriados');
 createFridayButton('Sexta-feira');
 createTask("teste");
 createTaskSubtitle("green");
+createTask("teste2");
+createTaskSubtitle("red");
 
 // Escreva seu código abaixo.

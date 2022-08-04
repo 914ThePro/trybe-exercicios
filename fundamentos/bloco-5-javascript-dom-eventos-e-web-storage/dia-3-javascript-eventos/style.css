@@ -96,9 +96,7 @@ label {
   width: 45px;
 }
 
-.selected{
-  border-radius: 0px;
-}
+
 
 .my-tasks span {
   color: #666;
@@ -162,3 +160,7 @@ label {
 }
 
 
+.selected{
+  border-collapse: separate; 
+  border-radius: 0%!important;
+}
