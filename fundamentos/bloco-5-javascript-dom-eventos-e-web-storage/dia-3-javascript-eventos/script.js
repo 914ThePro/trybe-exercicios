@@ -51,6 +51,7 @@ function createHolidayButton(buttonName){
   });
 }
 
+
 function markHolidays(){
   let holidays = document.querySelectorAll(".holiday");
 
@@ -69,8 +70,25 @@ function unmarkHolidays(){
   holidaysMarked = false;
 }
 
+
+function createFridayButton(buttonName){
+  let buttonsContainer = document.querySelector('.buttons-container');
+  let btnHoliday = document.createElement('button');
+  btnHoliday.innerText = buttonName;
+  buttonsContainer.appendChild(btnHoliday);
+
+  btnHoliday.addEventListener("click",function(){
+    if(holidaysMarked){
+      unmarkHolidays();
+    }else{
+      markHolidays();
+    }
+  });
+}
+
 createDaysOfTheWeek();
 creteDaysOfTheMonth();
 createHolidayButton('Feriados');
+createFridayButton('Sexta-feira');
 
 // Escreva seu código abaixo.
