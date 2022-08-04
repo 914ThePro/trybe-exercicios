@@ -120,6 +120,13 @@ function unZoomElement(event){
   event.target.style.fontSize = '20px';
 }
 
+function createTask(taskName){
+  let task = document.createElement("span");
+  let p = document.createElement("p");
+  task.innerText = taskName;
+  p.appendChild(task);
+  document.querySelector('.my-tasks').appendChild(p);
+}
 
 createDaysOfTheWeek();
 createDaysOfTheMonth();
