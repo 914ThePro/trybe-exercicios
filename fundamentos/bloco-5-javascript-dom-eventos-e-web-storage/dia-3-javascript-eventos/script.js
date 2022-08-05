@@ -1,5 +1,8 @@
 let holidaysMarked = false;
 let fridaysMarked = false;
+let btnAdd = document.getElementById("btn-add").addEventListener("click", adicionarCompromisso);
+document.getElementById("task-input").addEventListener("keyup", inputOnKeyUp);
+
 
 function createDaysOfTheWeek() {
   const weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
@@ -155,6 +158,21 @@ function changeColor(e){
   }
   //console.log(selectedTask);
   
+}
+
+function adicionarCompromisso(){
+  let compromisso = document.createElement("li");
+  let listaCompromissos = document.querySelector(".task-list");
+  let input = document.getElementById("task-input");
+
+  compromisso.innerText = input.value;
+  listaCompromissos.appendChild(compromisso);
+}
+
+function inputOnKeyUp(e){
+  if(e.key == "Enter"){
+    adicionarCompromisso();
+  }
 }
 
 createDaysOfTheWeek();
