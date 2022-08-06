@@ -46,7 +46,7 @@ window.onload = function(){
   mainContent[0].style.lineHeight = localStorage.getItem("lineHeight");
   mainContent[0].style.fontFamily = localStorage.getItem("fontFamily");
 
-  inputBackgrouncColor.value = localStorage.getItem("textColor");
+  inputBackgrouncColor.value = localStorage.getItem("backgroundColor");
   inputTextColor.value = localStorage.getItem("textColor");
   inputFontSize.value = localStorage.getItem("fontSize");
   inputLineHeight.value = localStorage.getItem("lineHeight");
