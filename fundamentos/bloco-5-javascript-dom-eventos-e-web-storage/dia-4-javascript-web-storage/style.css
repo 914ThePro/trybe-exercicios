@@ -1,0 +1,17 @@
+
+h2{
+  height: 40px;
+}
+
+main,header{
+  max-width: 1000px;
+  margin: 0px auto;
+}
+
+header div{
+  background-color: lightslategrey;
+  width: 190px;
+  margin-top: 30px;
+  padding: 20px;
+  display: inline-block;
+}
