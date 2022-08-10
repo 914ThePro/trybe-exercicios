@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <form action="" method="get">
+    <fieldset>
+      <label for="inputName">Nome Completo: </label>
+      <input type="text" name="nome" id="inputName" minlength="10" maxlength="40">
+    </fieldset>
+    <fieldset>
+      <label for="inputEmail">E-mail: </label>
+      <input type="email" name="email" id="inputEmail" minlength="10" maxlength="50">
+    </fieldset>
+    <fieldset id="destinos">
+      <legend>Destino Preferido</legend>
+      <input type="radio" value="Cidade" name="opcao" id="opcao1">
+      <label for="opcao1">Cidade</label>
+      <input type="radio" value="Campo" name="opcao" id="opcao2">
+      <label for="opcao2">Campo</label>
+      <input type="radio" value="Praia" name="opcao" id="opcao3">
+      <label for="opcao3">Praia</label>
+      <input type="radio" value="Montanhas" name="opcao" id="opcao4">
+      <label for="opcao4">Montanhas</label>
+    </fieldset>
+
+    <fieldset>
+      <label for="inputResposta">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label><br>
+      <textarea name="resposta" id="inputResposta" cols="30" rows="10" maxlength="500"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <label for="inputDate">Qual a melhor data para realizar sua viagem? </label>
+      <input type="date" name="Data" id="inputDate">
+    </fieldset>
+
+    <fieldset>
+      <input type="checkbox" id="checkBox1" name="check1">
+      <label for="checkBox1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label><br>
+      <input type="checkbox" id="checkBox2" name="check2">
+      <label for="checkBox2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+    </fieldset>
+    
+    <button type="submit">Enviar</button>
+    <input type="reset" value="Apagar">
+  </form>
+</body>
+</html>
