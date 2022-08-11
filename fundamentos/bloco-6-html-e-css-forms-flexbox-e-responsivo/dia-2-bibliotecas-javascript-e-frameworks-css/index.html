@@ -5,38 +5,41 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="script.js"></script>
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.min.css">
   <script src="jquery-3.6.0.min.js"></script>
   <script src="bootstrap-5.2.0-dist/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 <body>
   <form action="" method="get">
-    <fieldset class="scheduler-border">
+
+    <fieldset class="form-floating mb-3">
+      <input class="form-control" type="text" name="nome" id="inputName" minlength="10" maxlength="40" required placeholder="name">
       <label for="inputName">Nome Completo: </label>
-      <input class="form-control" type="text" name="nome" id="inputName" minlength="10" maxlength="40" required>
     </fieldset class="scheduler-border">
-    <fieldset class="scheduler-border">
+
+    <fieldset class="form-floating mb-3">
+      <input class="form-control" type="email" name="email" id="inputEmail" minlength="10" maxlength="50" required placeholder="name@example.com">
       <label for="inputEmail">E-mail: </label>
-      <input class="form-control" type="email" name="email" id="inputEmail" minlength="10" maxlength="50" required>
     </fieldset class="scheduler-border">
     
     <fieldset class="scheduler-border" id="destinos">
       <legend>Destino Preferido</legend>
-      <input type="radio" value="Cidade" name="opcao" id="opcao1" checked class="">
-      <label for="opcao1">Cidade</label>
-      <input type="radio" value="Campo" name="opcao" id="opcao2">
-      <label for="opcao2">Campo</label>
-      <input type="radio" value="Praia" name="opcao" id="opcao3">
-      <label for="opcao3">Praia</label>
-      <input type="radio" value="Montanhas" name="opcao" id="opcao4">
-      <label for="opcao4">Montanhas</label>
+      <input class="form-check-input" type="radio" value="Cidade" name="opcao" id="opcao1" checked class="">
+      <label class="form-check-lavel" for="opcao1">Cidade</label class="form-check-lavel">
+      <input class="form-check-input" type="radio" value="Campo" name="opcao" id="opcao2">
+      <label class="form-check-lavel" for="opcao2">Campo</label class="form-check-lavel">
+      <input class="form-check-input" type="radio" value="Praia" name="opcao" id="opcao3">
+      <label class="form-check-lavel" for="opcao3">Praia</label class="form-check-lavel">
+      <input class="form-check-input" type="radio" value="Montanhas" name="opcao" id="opcao4">
+      <label class="form-check-lavel" for="opcao4">Montanhas</label>
     </fieldset class="scheduler-border">
 
-    <fieldset class="scheduler-border">
+    <fieldset class="form-floating mb-3">
+      <textarea class="form-control" name="resposta" id="inputResposta" maxlength="500" required placeholder="sua resposta aqui"></textarea>
       <label for="inputResposta">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label><br>
-      <textarea class="form-control" name="resposta" id="inputResposta" cols="30" rows="10" maxlength="500" required></textarea>
     </fieldset class="scheduler-border">
 
     <fieldset class="scheduler-border">
