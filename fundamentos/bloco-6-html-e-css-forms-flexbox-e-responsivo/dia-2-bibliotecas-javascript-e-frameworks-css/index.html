@@ -8,20 +8,24 @@
   <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.min.css">
   <script src="jquery-3.6.0.min.js"></script>
   <script src="bootstrap-5.2.0-dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/DatePickerX.min.css">
+  <script src="just-validate.production.min.js"></script>
+  <script src="js/DatePickerX.min.js"></script>
+ 
 
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 <body>
-  <form action="" method="get">
+  <form id="form" action="" method="get">
 
     <fieldset class="form-floating mb-3">
-      <input class="form-control" type="text" name="nome" id="inputName" minlength="10" maxlength="40" required placeholder="name">
+      <input class="form-control" type="text" name="nome" id="inputName" required placeholder="name">
       <label for="inputName">Nome Completo: </label>
     </fieldset class="scheduler-border">
 
     <fieldset class="form-floating mb-3">
-      <input class="form-control" type="email" name="email" id="inputEmail" minlength="10" maxlength="50" required placeholder="name@example.com">
+      <input class="form-control" type="text" name="email" id="inputEmail" minlength="10" maxlength="50" required placeholder="name@example.com">
       <label for="inputEmail">E-mail: </label>
     </fieldset class="scheduler-border">
     
@@ -38,24 +42,25 @@
     </fieldset class="scheduler-border">
 
     <fieldset class="form-floating mb-3">
-      <textarea class="form-control" name="resposta" id="inputResposta" maxlength="500" required placeholder="sua resposta aqui"></textarea>
+      <textarea class="form-control" name="resposta" id="inputResposta" required placeholder="sua resposta aqui"></textarea>
       <label for="inputResposta">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label><br>
     </fieldset class="scheduler-border">
 
     <fieldset class="scheduler-border">
       <label for="inputDate">Qual a melhor data para realizar sua viagem? </label>
-      <input type="date" name="Data" id="inputDate" required>
+      <input type="text" name="Data" id="inputDate" required>
     </fieldset class="scheduler-border">
 
     <fieldset class="scheduler-border">
       <input type="checkbox" id="checkBox1" name="check1">
       <label for="checkBox1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label><br>
       <input type="checkbox" id="checkBox2" name="check2" required>
-      <label for="checkBox2">Concordo que imagens das minhas férias poderão ser <>usadas na divulgação de concursos futuros.</label>
+      <label for="checkBox2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
     </fieldset class="scheduler-border">
     
     <button class = "btn btn-success"type="submit" id="submit">Enviar</button>
     <input class="btn btn-warning" type="reset" value="Apagar">
   </form>
+
 </body>
 </html>

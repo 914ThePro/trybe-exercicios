@@ -10,3 +10,7 @@ fieldset{
   height: 300px;
 }
 
+#inputDate{
+  cursor: pointer;
+}
+
