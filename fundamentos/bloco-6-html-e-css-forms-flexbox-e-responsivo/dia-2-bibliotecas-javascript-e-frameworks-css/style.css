@@ -1,0 +1,16 @@
+body{
+  padding: 0px 20px;
+}
+
+fieldset{
+  border: none;
+}
+
+#inputResposta{
+  height: 300px;
+}
+
+#inputDate{
+  cursor: pointer;
+}
+
