@@ -1,0 +1,116 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  margin-top:110px;
+  background-color: #CAF0F8;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+#header{
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  background-color: white;
+  height: 100px;
+  box-shadow: 0px 0px 10px black;
+  max-width: 1600px;
+}
+
+#header p{
+  font-size: 16px;
+  margin: 15px;
+}
+
+#navMenu ul{
+  padding: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0px;
+  height: 100%;
+  align-items: center;
+}
+
+#navMenu ul li{
+  display: flex;
+  flex-basis: 27%;
+  padding: 0px 5px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: #00B4D8;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 1024px;
+  margin: 0px auto;
+}
+
+.aside-one{
+  background-color: #023E8A;
+  color: white;
+  border-radius: 20px;
+  padding: 5px;
+  max-width: 375px;
+  max-height: 300px;
+  margin-bottom: 10px;
+}
+
+.aside-two{
+  background-color: #0077B6;
+  color: white;
+  border-radius: 20px;
+  padding: 5px;
+  max-width: 375px;
+  max-height: 300px;
+}
+
+
+h1{
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+}
+
+footer{
+  background-color: #0077B6;
+  color: white;
+
+}
+
+@media screen and (min-width: 650px) {
+  
+  #header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #header p {
+    flex-basis: 60%;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #navMenu{
+    flex-basis: 30%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  
+  #header p{
+    font-size: 40px;
+    
+  }
+}
