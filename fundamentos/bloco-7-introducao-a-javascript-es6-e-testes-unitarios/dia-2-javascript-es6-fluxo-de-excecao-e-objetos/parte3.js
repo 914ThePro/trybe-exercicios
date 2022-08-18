@@ -28,8 +28,8 @@ const tamanhoObjeto = objeto => Object.keys(objeto).length;
 
 const valoresObjeto = objeto => Object.values(objeto);
 
-let allLessions = {};
-Object.assign(allLessions,{lesson1,lesson2,lesson3});
+let allLessons = {};
+Object.assign(allLessons,{lesson1,lesson2,lesson3});
 
 const numeroTotalAlunos = objeto => objeto.lesson1.numeroEstudantes + objeto.lesson2.numeroEstudantes + objeto.lesson3.numeroEstudantes;
 
@@ -43,5 +43,33 @@ const verifyPair = (objeto, chave, valor) => {
   }
 }
 
-console.log(verifyPair(lesson3, 'turno', 'noite'));
-console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
+const estudantesMatematica = objeto => {
+  let totalEstudantes = 0;
+  for(let key in objeto){
+    if(objeto[key].materia == 'Matemática'){
+      totalEstudantes += objeto[key].numeroEstudantes;
+    }
+  }
+
+  return totalEstudantes;
+}
+
+
+const createReport = (objeto, nomeProfessor) => {
+  let report = {
+    professor: nomeProfessor,
+    aulas: [],
+    estudantes: 0
+  }
+
+  for(let key in objeto){
+    if(objeto[key].professor == nomeProfessor){
+      report.aulas.push(objeto[key].materia)
+      report.estudantes += objeto[key].numeroEstudantes;
+    }
+  }
+
+  return report
+}
+
+console.log(createReport(allLessons, 'Maria Clara'))
