@@ -7,4 +7,15 @@ function substituaX(nome){
   return resultado.join(' ');
 }
 
-console.log(substituaX("Eduardo"));
+function minhasSkills(retornoDaOutraFuncao){
+  const skills = ['JavaScript', 'HTML', 'CSS'];
+  let resultado = `${retornoDaOutraFuncao}
+Minhas três principais abilidades são:
+${skills[0]}
+${skills[1]}
+${skills[2]}`;
+
+  return resultado;
+}
+
+console.log(minhasSkills(substituaX("Eduardo")));
