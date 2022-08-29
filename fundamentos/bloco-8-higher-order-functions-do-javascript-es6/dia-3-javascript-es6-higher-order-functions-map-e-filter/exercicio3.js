@@ -62,3 +62,10 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
+
+function fantasyOrScienceFiction() {
+  // escreva seu código aqui
+  return books.filter(b => b.genre == 'Fantasia' || b.genre == 'Ficção Científica');
+}
+
+console.log(fantasyOrScienceFiction());
