@@ -10,7 +10,8 @@ const fetchJoke = () => {
   };
   fetch(API_URL, specifications)
     .then(r => r.json())
-    .then(r => jokeContainer.innerText = r.joke);
+    .then(r => jokeContainer.innerText = r.joke)
+    .catch(e => jokeContainer.innerText = e.message);
   
 
 };
